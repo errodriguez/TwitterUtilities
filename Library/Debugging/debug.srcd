@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+#
+# debug.scd v1.0.0
+#
+# Utility functions for debugging purposes.
+#
+# (c) Eduardo René Rodríguez Ávila:June 2018
+###############################################################################
+
+function DisplayVars {
+  for name in ${!TwU@}
+  do
+      echo $name"="${!name}
+  done
+  return 0
+}
