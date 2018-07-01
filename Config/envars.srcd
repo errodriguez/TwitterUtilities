@@ -4,7 +4,7 @@
 #
 # Variables and settings for a Unix BASH environment.
 # 
-# (c) Eduardo René Rodrígue Ávila:June 2018
+# (c) Eduardo René Rodríguez Ávila:June 2018
 ###############################################################################
 
 #===============================================================================
@@ -18,7 +18,7 @@ shopt -s extglob
 #- SCRIPT'S BODY
 #===============================================================================
 
-export TwUSupport="../../Library/ScriptsSupport"
-export TwUDebug="../../Library/Debugging"
+export TwUSupport=$1/"../../Library/ScriptsSupport"
+export TwUDebug=$1/"../../Library/Debugging"
 
 ###############################################################################

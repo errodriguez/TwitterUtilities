@@ -20,7 +20,7 @@
 TwUPath=$(dirname $0)
 
 #+ Common variables to this and other scripts.
-source $TwUPath/../../Config/envars.srcd
+source $TwUPath/../../Config/envars.srcd $TwUPath
 
 #+ Debugging functionality.
 source $TwUDebug/debug.srcd
