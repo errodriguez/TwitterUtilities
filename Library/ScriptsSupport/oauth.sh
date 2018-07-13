@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# oauth.sh v1.0.0
+# oauth.sh v1.0.1
 #
 # OAuth
 #
@@ -237,7 +237,7 @@ HSTR="OAuth "$HSTR
 
 #- 7.- Finally, return the OAuth string.
 
-echo "$6?$OSTR  --$5 --header 'Authorization: $HSTR'"
+echo "$6?$OSTR  --request $5 --header 'Authorization: $HSTR'"
 
 exit $? 
 ###############################################################################
