@@ -28,9 +28,9 @@ function RFC3986 {
 # Radix64.- Represent binary data in an ASCII string format by translating it
 # into a radix-64 representation scheme.
 function Radix64 {
-if (( $# == 0 ))
-   then set -- $(< /dev/stdin)
-fi
+  if (( $# == 0 ))
+     then set -- $(< /dev/stdin)
+  fi
   case $(uname) in
        Darwin) echo -n $1 | base64
                return $?

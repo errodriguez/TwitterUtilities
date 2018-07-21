@@ -127,7 +127,7 @@ do
                then Message 3
                     exit 3
                else read TwUCKey TwUCSec TwUATok TwUASec <<< $( awk '
-                             { printf("%s ", $0)}' $OPTARG )
+                             { printf("%s ", $0)}' $TwUFile )
             fi
             ;;
          K) TwUCKey=$OPTARG
