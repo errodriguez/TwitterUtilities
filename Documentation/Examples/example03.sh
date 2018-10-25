@@ -9,6 +9,9 @@
 # USAGE:
 # $ ./example03.sh [PATH/]FILENAME
 #
+# After launched, this script will remain connected and showing the stream of
+# tweets in the screen. Press CTRL+C to stop it.
+#
 # Parameters:
 #   FILENAME	An optional fully- or relative-qualified file name with
 #               Twitter credential access.
@@ -39,7 +42,8 @@ fi
 
 
 #+ API call.
-$TwC/twttrac.sh -s -f $1 https://api.twitter.com/1.1/users/show.json screen_name $2 | jq -r 'if .errors then .|.message else {Followers:.followers_count, Following:.friends_count, Listed:.listed_count, Likes:.favourites_count, Tweets:.statuses_count} end'
+$TwC/twttrac.sh -s -f $1 https://stream.twitter.com/1.1/statuses/filter.json locations -118.55,14.53,-96.94,36.61,-96.94,14.53,-91.72,22.22,-91.72,16.08,-86.54,22.22
+
 
 exit $TwUStatus
 ###############################################################################
