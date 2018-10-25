@@ -29,7 +29,7 @@ function RFC3986 {
 # into a radix-64 representation scheme.
 function Radix64 {
   if (( $# == 0 ))
-     then set -- $(< /dev/stdin)
+     then set -- $(< /dev/stdin LC_ALL=C tr -d \\0)
   fi
   case $(uname) in
        Darwin) echo -n $1 | base64
