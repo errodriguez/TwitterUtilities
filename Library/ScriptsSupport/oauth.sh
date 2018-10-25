@@ -1,12 +1,12 @@
 #! /usr/bin/env bash
 #
-# oauth.sh v1.0.1
+# oauth.sh v1.0.2
 #
 # OAuth
 #
 # This scripts implements an OAuth signed authentication wrapper.
 #
-# (c) Eduardo René Rodríguez Ávila:June 2018 
+# (c) Eduardo René Rodrígue Ávila:June 2018 
 ################################################################################
 
 #===========================================================================
