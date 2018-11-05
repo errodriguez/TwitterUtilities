@@ -42,7 +42,7 @@ function Usage {
   echo "    -v  Verbose mode."
   echo "    -s  Silent mode."
   echo "    -d  Debug mode."
-  echo "    -t  Maximum operation time in seconds.
+  echo "    -t  Maximum operation time in seconds."
   echo "    -m  HTTP method (GET by default)."
   echo "    -f  Credentials file."
   echo "    -K  Consumer Key (API Key)."
