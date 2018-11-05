@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# twttrac v1.0.0
+# twttrac v1.1.0
 #
 # Twitter API Console
 #
@@ -42,6 +42,7 @@ function Usage {
   echo "    -v  Verbose mode."
   echo "    -s  Silent mode."
   echo "    -d  Debug mode."
+  echo "    -t  Maximum operation time in seconds.
   echo "    -m  HTTP method (GET by default)."
   echo "    -f  Credentials file."
   echo "    -K  Consumer Key (API Key)."
@@ -78,6 +79,8 @@ function Message {
           ;;
        4) echo "Error generating OAuth string."
           ;;
+       5) echo "A numeric value is required, read $2 instead."
+          ;;
        *) echo $1
           return 255
           ;;
@@ -86,13 +89,14 @@ function Message {
 } >&2
 
 #- Variables and flags to control this script.
-TwUOptions="hvsdm:f:K:C:T:S:"
+TwUOptions="hvsdm:f:K:C:T:S:t:"
 TwUStatus=0
 TwUVerbose=""
 TwUQuiet=""
 TwUDebug=""
 TwUMethod="GET"
 TwUFile=""
+TWUTime=""
 #+ OAuth arguments.
 TwUCKey=""
 TwUCSec=""
@@ -121,6 +125,12 @@ do
          d) TwUDebug=$opt
             ;;
          m) TwUMethod=$OPTARG
+            ;;
+         t) if [[ $OPTARG =~ ^[0-9]+$ ]]
+               then TwUTime="-m $OPTARG"
+               else Message 5 $OPTARG
+                    exit 5
+            fi
             ;;
          f) TwUFile=$OPTARG
             if ! [ -f $TwUFile ]
@@ -167,7 +177,7 @@ if [ $TwUStatus != 0 ]
            # message.
            then Message "$TwUOAuth"
         fi
-   else echo $TwUOAuth | xargs curl $TwUVerbose $TwUQuiet; TwUStatus=$?
+   else echo $TwUOAuth|xargs curl $TwUTime $TwUVerbose $TwUQuiet; TwUStatus=$?
 fi
 
 exit $TwUStatus
