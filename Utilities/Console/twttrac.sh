@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 #
-# twttrac v1.1.0
+# twttrac v1.1.1
 #
 # Twitter API Console
 #
