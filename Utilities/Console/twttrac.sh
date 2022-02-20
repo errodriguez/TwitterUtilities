@@ -1,13 +1,10 @@
 #! /usr/bin/env bash
 #
-# twttrac v1.1.2
-#
-# Twitter API Console
-#
-# A pure BASH console for the Twitter API.
-#
-#
-# Eduardo René Rodríguez Ávila
+# Script     : twttrac.sh
+# Version    : 1.1.2
+# Description: A pure BASH script to act as an API console for Twitter.
+# Purpose    : To easily interact with Twitter's API from the command line.
+# Author     : Dr. Eduardo René Rodríguez Ávila
 ##############################################################################
 
 #=============================================================================
