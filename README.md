@@ -1,5 +1,5 @@
 # TwitterUtilities
-A set of scripts and command line utilities to interact with Twitter easily.
+A set of scripts to easily interact with Twitter from the BASH command line.
 
 ## Overview
 

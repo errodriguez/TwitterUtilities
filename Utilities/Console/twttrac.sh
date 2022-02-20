@@ -1,13 +1,13 @@
 #! /usr/bin/env bash
 #
-# twttrac v1.1.1
+# twttrac v1.1.2
 #
 # Twitter API Console
 #
 # A pure BASH console for the Twitter API.
 #
 #
-# (c) Eduardo René Rodríguez Ávila:June 2018 
+# Eduardo René Rodríguez Ávila
 ##############################################################################
 
 #=============================================================================

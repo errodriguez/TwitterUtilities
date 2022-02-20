@@ -1,10 +1,10 @@
 #! /usr/bin/env bash
 #
-# envars.srcd v1.0.0
+# envars.srcd v1.0.1
 #
 # Variables and settings for a Unix BASH environment.
 # 
-# (c) Eduardo René Rodríguez Ávila:June 2018
+# Eduardo René Rodríguez Ávila
 ###############################################################################
 
 #===============================================================================
