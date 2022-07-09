@@ -1,6 +1,6 @@
-#! /usr/bin/env bash
+#! /bin/echo This file has to be sourced, please type: source
 #
-# envars.srcd v1.0.1
+# envars.srcd v1.1.0
 #
 # Variables and settings for a Unix BASH environment.
 # 
