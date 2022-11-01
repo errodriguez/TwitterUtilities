@@ -28,3 +28,10 @@ Mandatory values are those who are not inside brackets. Whatever they appear as 
 Alternatives
 
 Mutually exclusive values are denoted by a pipe (|). Values before and after a pipe should be considered as alternatives (regarded if they should be considered mandatory or optional), and only one of this should be picked.
+
+File extensions
+bsh	BASH scripts
+
+File extensions
+bsh	BASH scripts.
+bsr	BASH script to be sourced.
